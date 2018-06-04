@@ -1,6 +1,6 @@
 # My stapled_peptide_permeability analysis 
 
-## install anaconda from 
+## Install anaconda from 
 ```
 https://www.anaconda.com/download/#linux
 ```
@@ -15,7 +15,7 @@ $ conda create -n stapled_peptide python=3.5  --file spec-file.txt
 $ source activate stapled_peptide
 ```
 
-## Install other packages
+## Install other essential packages
 ```
 $ pip install -r requirements.txt
 ```
