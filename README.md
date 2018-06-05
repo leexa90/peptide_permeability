@@ -1,31 +1,38 @@
-# My stapled_peptide_permeability analysis 
+## My stapled_peptide_permeability analysis. 
+The code below reproduces my analysis. The instructions are for ubuntu  14/16 os
 
-## Install anaconda from 
+### Install git and clone repo
+```
+sudo apt install git-all
+git clone git@github.com:leexa90/stapled_peptide_permaebility.git
+```
+
+### Install anaconda from 
 ```
 https://www.anaconda.com/download/#linux
 ```
 
-## Create conda environment 
+### Create conda environment 
 ```
   conda create -n stapled_peptide python=3.5  --file spec-file.txt
 ```
 
-## Activate Conda environment
+### Activate Conda environment
 ```
   source activate stapled_peptide
 ```
 
-## Install other essential packages
+### Install other essential packages
 ```
   pip install -r requirements.txt
 ```
 
-## Add environment to jupyter notebook
+### Add environment to jupyter notebook
 ```
   python -m ipykernel install --user --name stapled_peptide --display-name "stapled_peptide"
 ```
 
-## Deactivate environment
+### Deactivate environment
 ```
   source deactivate stapled_peptide
 ```
