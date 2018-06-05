@@ -1,23 +1,13 @@
-Directory Structure
---------------------
+### To process raw data
+```
+cd data
+python 1_process_raw.py
+```
 
-    .
-    ├── AUTHORS.md
-    ├── LICENSE
-    ├── README.md
-    ├── models  <- compiled model .pkl or HDFS or .pb format
-    ├── config  <- any configuration files
-    ├── data
-    │   ├── interim <- data in intermediate processing stage
-    │   ├── processed <- data after all preprocessing has been done
-    │   └── raw <- original unmodified data acting as source of truth and provenance
-    ├── docs  <- usage documentation or reference papers
-    ├── notebooks <- jupyter notebooks for exploratory analysis and explanation 
-    ├── reports <- generated project artefacts eg. visualisations or tables
-    │   └── figures
-    └── src
-        ├── data-proc <- scripts for processing data eg. transformations, dataset merges etc. 
-        ├── viz  <- scripts for visualisation during EDA, modelling, error analysis etc. 
-        ├── modeling    <- scripts for generating models
-    |--- environment.yml <- file with libraries and library versions for recreating the analysis environment
-   
+### To train models
+```
+cd data
+python 2a_xgboost_train_predict.py
+python 2b_LSTM_train_predict.py
+python 2c_CNN_train_predict.py
+```
