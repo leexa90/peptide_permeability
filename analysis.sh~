@@ -1,4 +1,0 @@
-echo 'Ensure you are in anaconda environment'
-source deactivate
-source activate stapled_peptide
-
