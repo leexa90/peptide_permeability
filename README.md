@@ -31,7 +31,10 @@ https://www.anaconda.com/download/#linux
 ```
   python -m ipykernel install --user --name stapled_peptide --display-name "stapled_peptide"
 ```
-
+### Perform analysis (./data)
+```
+bash analysis.sh
+```
 ### Deactivate environment
 ```
   source deactivate stapled_peptide
