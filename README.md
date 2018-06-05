@@ -1,10 +1,10 @@
-## My stapled_peptide_permeability analysis. 
+## My peptide_permeability analysis. 
 The code below reproduces my analysis. The instructions are for ubuntu  14/16 os
 
 ### Install git and clone repo
 ```
 sudo apt install git-all
-git clone git@github.com:leexa90/stapled_peptide_permaebility.git
+git clone git@github.com:leexa90/peptide_permeability.git
 ```
 
 ### Install anaconda from 
