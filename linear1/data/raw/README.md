@@ -1,6 +1,5 @@
-Mammal_signal_peptide.csv 
 
-Data collection : (actual what I done)
+### Data collection : (actual what I done)
 There are two manually curated databases, one which contains a positive dataset of 1000 permeable peptides. We chose mainly signal peptides as the negative dataset as they exit instead of enter cells and also protein data-bank sequences which have experimentally determined 3D structures.
 The negative experimentally validated dataset was obtained from three public databases.
 
