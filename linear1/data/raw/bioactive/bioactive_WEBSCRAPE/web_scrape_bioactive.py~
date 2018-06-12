@@ -1,0 +1,28 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+import numpy as np
+import time
+# create a new Firefox session
+caps = DesiredCapabilities().FIREFOX
+caps["marionette"] = True
+caps["pageLoadStrategy"] = "normal"  #  complete
+driver = webdriver.Firefox(capabilities=caps)
+driver.maximize_window()
+for i in (4,):
+    page = 'http://www.peptides.be/index.php?p=search&accession_number=&name=&organism_group=&organism_species=&length_from=%s&le\
+ngth_to=%s&mass_from=&mass_to=&family_group=&family=&uniprot=&aminoacid=&submitbutton=Submit' %(i,i+30)
+    time.sleep(5)
+    driver.get(page)
+    page = 'http://www.peptides.be/index.php?p=pepfasta&accession_number=&name=&organism_group=&organism_species=&length_from=0&length_to=30&mass_from=&mass_to=&family_group=&family=&uniprot=&aminoacid=&submitbutton=Submit&breakout=1&context=search'
+    driver.get(page)
+    f1= open('%s.txt'%i,'w')
+    f1.write(driver.page_source.encode('utf-8'))
+    f1.close()
+
+
