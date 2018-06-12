@@ -10,7 +10,7 @@ source deactivate
 ```
 ### Report is in ./reports
 
-### To view data
+### To view analysis
 ```
 cd data
 source deactivate
