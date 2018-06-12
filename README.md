@@ -5,6 +5,7 @@ The code below reproduces my analysis. The instructions are for ubuntu  14/16 os
 ```
 sudo apt install git-all
 git clone git@github.com:leexa90/peptide_permeability.git
+cd peptide_permeability
 ```
 
 ### Install anaconda from 
